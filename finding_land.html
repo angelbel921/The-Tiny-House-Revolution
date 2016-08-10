@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Courgette|Cantarell|Gudea|Quattrocento+Sans|ABeeZee|Comfortaa' rel='stylesheet' type='text/css'>
+<link rel='stylesheet' href="Font.css">
+</head>
+<head>
+<body style = "background-color:#e6fff2;"></body>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #000000;
+}
+
+#nav {
+	font-family: 'ABeeZee', sans-serif;
+}
+</style>
+</head>
+<body>
+
+<ul class="w3-navbar w3-border w3-black w3-center" id="nav" >
+  <li style="width:20%"><a href="index.html"><font size= "5">Home</font></a></li>
+  <li style="width:20%"><a href="videos.html"><font size= "5">Videos</font></a></li>
+  <li style="width:20%"><a href="finding_land.html"><font size= "5">Finding Land</font></a></li>
+  <li style="width:20%"><a class="w3-green" href="interior.html"><font size= "5">Interior Space</font></a></li>
+  <li style="width:20%"><a href="builders.html"><font size= "5">Tiny Home Builders</font></a></li>
+ 
+</ul>
+<br></br>
+<body style = "background-color:#ccffff;"></body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="white.jpg" style="width:100%">
+  <img class="mySlides" src="surf.jpg" style="width:100%">
+  <img class="mySlides" src="modern.jpg" style="width:100%">
+  <img class="mySlides" src="cabin.jpg" style="width:100%">
+  <img class="mySlides" src="open.jpg" style="width:100%">
+  <img class="mySlides" src="modern_rustic.jpg" style="width:100%">
+  
+</div>
+<head>
+  
+  <title>Google Maps Multiple Markers</title>
+  <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+</head>
+<body>
+  <center><div id="map" style="height: 600px; width: 700px;"></center>
+</div>
+<script type="text/javascript">
+    var locations = [
+    ['AZ Pima County', 32.0575, -111.6661, 4],
+    ['Walsenburg, Colorado', 37.6242, -104.7803, 5],
+    ['Canyon County, Idaho', 43.6780, -116.6865 , 3],
+    ['Hillsborough County, Florida', 27.9904, -82.3018, 2],
+    ['Pulaski County, Kentucky', 37.0854, -84.5222, 1],
+    ['Richmond, Maine', 44.0881, -69.8026, 6 ],
+	['Union Mills, North Carolina', 35.4881, -81.9633, 7],
+	['Newfield, NewYork', 42.3471, -76.5951, 8],
+	['Grafton County, New Hampshire', 43.9088, -71.8260, 9],
+	['Dayton, Ohio', 39.7589, -84.1916, 10],
+	['Logan County, Oklahoma', 35.9405, -97.5247, 11],
+	['Ashland, Oregon', 42.1946, -122.7095, 12],
+	['Philadelphia,Pennsylvania', 39.9526, -75.1652, 13],
+	['Dandridge, Tennessee', 36.0154, -83.4149, 14],
+	['Spur, Texas', 33.4765, -100.8557, 15],
+	['Washington County, Utah', 37.3225, -113.4776, 16],
+    ['Jefferson County, Florida', 30.4312, -83.8897, 17],
+	['Sarasota County, Florida', 27.1996, - 82.3452, 18],  
+    ['Alameda County, California', 37.7652, -122.2416, 19],
+    ['Lake County, California', 39.0840, -122.8084, 20],
+	['Napa County, California', 38.5025, -122.2654, 21],
+	['Sacramento County, California', 38.4747, -121.3542, 22],
+	['Fresno County, California', 36.9859, -119.2321, 23],
+	['North Yarmouth, Maine', 43.8574, -70.2389, 24],
+	['Nantucket, Massachusetts', 41.2835, -70.0995, 25],
+	
+	
+	
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
+      center: new google.maps.LatLng(39.83333, -98.58334 ),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) { 
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
+  <center><p><center><font size="5"></center>Above are all the markers showing where all the tiny house communities are in the United States.
+  </p></center>
+</body>
+</html>

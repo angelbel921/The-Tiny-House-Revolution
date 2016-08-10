@@ -1,0 +1,222 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#ad {
+    width: 728px;
+    height: 90px;
+    font-family: Arial, sans-serif;
+}
+
+/* CONTAINERS AND IMAGES */
+
+/*  FOR TRANSFORMS ADD:
+	-webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+	-webkit-transform: scale(1) rotate(0deg);
+	-moz-transform: scale(1) rotate(0deg);
+	-o-transform: scale(1) rotate(0deg);
+	-ms-transform: scale(1) rotate(0deg);
+	transform: scale(1) rotate(0deg);
+*/
+#globe-white {
+    position: absolute;
+    top: 48px;
+    left: 686px;
+    opacity: 1;
+}
+#globe-blue {
+    position: absolute;
+    top: 48px;
+    left: 686px;
+    opacity: 0;
+}
+#hero {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}     
+#bg-blue {
+	position: absolute;
+	width: 728px;
+	height: 90px;
+	top: 0px;
+	left: 0px;
+	background-color: #009FDB;
+	opacity: 1;
+}       
+#bg-white {
+	position: absolute;
+	width: 728px;
+	height: 90px;
+	top: 0px;
+	left: 0px;
+	background-color: #FFF;
+	opacity: 0;
+}     
+#bg-stripe {
+	position: absolute;
+	width: 728px;
+	height: 90px;
+	top: 0px;
+	left: 550px;
+	background-color: #009FDB;
+	opacity: 1;
+}
+/* ANIMATION FRAME 1 */
+#frame1 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+}
+#copy1A {
+	position: absolute;
+	top: 10px;
+	left: 0px;
+}
+#copy1B {
+	position: absolute;
+	top: 32px;
+	left: 0px;
+}
+
+/* ANIMATION FRAME 2 */
+#frame2 {
+    position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#phoneBlack {
+	position: absolute;
+	top: -92px;
+	left: 24px;
+}
+#phoneGold {
+	position: absolute;
+	top: -92px;
+	left: 50px;
+}
+#copy2A {
+	position: absolute;
+	top: 12px;
+	left: -262px;
+	opacity: 1;
+}
+#copy2B {
+	position: absolute;
+	top: 30px;
+	left: -262px;
+	opacity: 1;
+}
+#copy2C {
+	position: absolute;
+	top: 45px;
+	left: 728px;
+	-webkit-transform-origin: 66.793893129771% 33.33333333%;
+    transform-origin: 66.793893129771% 33.33333333%; 
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+#copy2D {
+	position: absolute;
+	top: 42px;
+	left: 0px;
+	opacity: 0;
+}
+/* ANIMATION FRAME 3 */
+#frame3 {
+    position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#copy3A {
+    position: absolute;
+    top: 24px;
+	left: -360px;
+    opacity: 1;
+}
+#copy3B {
+    position: absolute;
+    top: -34px;
+	left: 360px;
+    opacity: 1;
+}
+#copy3C {
+    position: absolute;
+    top: -34px;
+	left: 492px;
+    opacity: 1;
+}
+#copy3D {
+    position: absolute;
+    top: 44px;
+	left: -728px;
+    opacity: 1;
+}
+/* DISPLAY BUTTON */
+#buttonContainer {
+	position: absolute;
+	display: block;
+	width: 128px;
+    height: 22px;
+    top: 46px;
+    left: 488px;
+    opacity: 0;
+}
+.buttonBG {
+    position: absolute;
+    display: block;
+    width: 128px;
+    height: 22px;
+    top: 0px;
+    left: 0px;
+    background: #EA7400;
+    box-sizing: border-box;
+    border-radius: 5px;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+.buttonText {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 0px;
+    text-decoration: none;
+    outline: none;
+}
+
+/* LEGAL TEXT ELEMENTS */
+#ltd1 {
+    position: absolute;
+    width: 700px;
+    top: 76px;
+    left: 6px;
+    opacity: 0;
+	font-family: Arial, sans-serif;
+    font-size: 8px;
+    line-height: 9px;
+    letter-spacing: -0.04rem;
+    color: #FFF;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+#ltd2 {
+    position: absolute;
+    width: 500px;
+    top: 76px;
+    left: 140px;
+    opacity: 0;
+	font-family: Arial, sans-serif;
+    font-size: 8px;
+    line-height: 9px;
+    color: #959595;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
